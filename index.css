@@ -468,7 +468,7 @@ footer {
         font-size: 14px;
         font-weight: 500;
         width: 100px;
-        margin: 55px 0 0 5px;
+        margin: 25px 0 0 5px;
         border: none;
         transition: 0.8s ease;
         color: white;
@@ -479,14 +479,12 @@ footer {
         background-color: rgb(111, 126, 235);
     }
 
-    .Submit {
+     .Submit {
         height: 35px;
         width: 170px;
         background-color: rgb(134, 145, 232);
         margin: 0;
-        position: relative;
-        left: 130px;
-        top: -36px;
+        margin-top: 20px;
         border: none;
         color: white;
         font-size: 14px;
@@ -496,7 +494,6 @@ footer {
         border-radius: 5px;
         box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
     }
-
     .Submit:hover {
         background-color: rgb(96, 110, 218);
     }

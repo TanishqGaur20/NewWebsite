@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 100vw;
+    height: 350px;
+    background-image: url(image_Laptop.jpg);
+    background-size: contain;
+}
+
+.div1 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 100px;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+
+.div2 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.div3 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.div4 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.div4 i {
+    margin-left: 6px;
+    opacity: .75;
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.div4 i:hover {
+    color: rgb(42, 42, 205);
+    border: 2px solid blue;
+}
+
+.hero2 {
+    display: flex;
+    padding-left: 15px;
+    height: 40px;
+    width: 100vw;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.divOI {
+    font-size: 12px;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.divO {
+    font-size: 16px;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top: 8px;
+}
+
+.divbl:hover {
+    text-decoration: underline;
+}
+
+.divbl {
+    color: rgb(29, 29, 183);
+}
+
+.hero3 {
+    height: 280px;
+    width: 70vw;
+    padding: 50px 10px 0 150px;
+    /* background-color: red; */
+}
+
+.div1st {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.div2st {
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: 100;
+    color: #7D6D8C;
+}
+
+.div3ST {
+    display: flex;
+}
+
+.div3st {
+    font-size: 20px;
+    width: 350px;
+    margin-left: 4px;
+    margin-top: 25px;
+    border: 1px solid #c1c1c3;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+    /* font-weight: 50; */
+    background-color: #F5F6FA;
+    border-style: dashed;
+}
+
+.span1 {
+    color: rgb(83, 83, 201);
+}
+
+.span2 {
+    font-size: 20px;
+    color: rgb(107, 103, 103);
+}
+
+.div3st2 {
+    margin-top: 55px;
+    font-size: 15px;
+    position: relative;
+    left: 50px;
+    width: 180px;
+    color: rgb(107, 103, 103);
+    height: 60px;
+    text-align: center;
+    margin-left: 25px
+}
+
+.boxdiv3 {
+    height: 35px;
+    width: 180px;
+    position: relative;
+    top: 100px;
+    left: -120px;
+    background-color: #6875E2;
+    border-radius: 40px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 8px;
+    /* padding: 5px 15px 5px 90px; */
+}
+
+.hero4 {
+    height: 850px;
+    width: 70vw;
+    padding: 40px 15px 40px 15px;
+    /* background-color: rgb(178, 175, 175); */
+    position: relative;
+    left: 150px;
+}
+
+.hero4div1 {
+    font-size: 22px;
+    font-weight: 450;
+}
+
+form {
+    margin-top: 20px;
+    font-size: 25px;
+    color: rgb(72, 70, 70);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.star {
+    color: red;
+}
+
+input {
+    margin-top: 15px;
+    display: block;
+    height: 30px;
+    width: 100%;
+    padding-left: 12px;
+}
+
+select {
+    margin-top: 15px;
+    display: block;
+    height: 30px;
+    width: 100%;
+    padding-left: 12px;
+}
+
+.files {
+    cursor: pointer;
+    height: 40px;
+    font-size: 24px;
+    width: 200px;
+}
+
+.cancel {
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-weight: 500;
+    width: 150px;
+    margin: 55px 0 0 120px;
+    border: none;
+    transition: 0.8s ease;
+    color: white;
+    background-color: rgb(134, 145, 232);
+}
+
+.cancel:hover {
+    background-color: rgb(111, 126, 235);
+}
+
+.Submit {
+    height: 40px;
+    width: 180px;
+    background-color: rgb(134, 145, 232);
+    margin: 55px 0 0 50px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 3px 3px;
+    transition: 0.5s ease;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Submit:hover {
+    background-color: rgb(96, 110, 218);
+}
+
+footer {
+    height: 100px;
+    width: 100vw;
+    background-color: #d9c2c2;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+@media (max-width:600px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero {
+        width: 100vw;
+        height: 280px;
+        background-image: url(image_Laptop.jpg);
+        background-size: contain;
+    }
+
+    .div1 {
+        font-size: 17px;
+        font-weight: 400;
+        padding-top: 30px;
+        text-align: center;
+        margin-bottom: 8px;
+
+    }
+
+    .div2 {
+        text-align: center;
+        margin-bottom: 8px;
+        margin-top: 20px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .div3 {
+        font-size: 17px;
+        font-weight: 400;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .div4 {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .div4 i {
+        margin-left: 6px;
+        opacity: .75;
+        padding: 4px;
+        border: 2px solid black;
+        border-radius: 50px;
+    }
+
+    .div4 i:hover {
+        color: rgb(42, 42, 205);
+        border: 2px solid blue;
+    }
+
+    .hero2 {
+        display: flex;
+        padding-left: 15px;
+        height: 40px;
+        width: 96vw;
+        box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .divOI {
+        font-size: 12px;
+        margin-top: 12px;
+        margin-left: 5px;
+    }
+
+    .divO {
+        font-size: 16px;
+        margin-right: 4px;
+        margin-left: 4px;
+        margin-top: 8px;
+    }
+
+    .divbl:hover {
+        text-decoration: underline;
+    }
+
+    .divbl {
+        color: rgb(29, 29, 183);
+    }
+
+    .hero3 {
+        height: 280px;
+        width: 90vw;
+        padding: 50px 10px 0 20px;
+        /* background-color: red; */
+    }
+
+    .div1st {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .div2st {
+        margin-top: 5px;
+        font-size: 17px;
+        font-weight: 100;
+        color: #7D6D8C;
+    }
+
+    .div3ST {
+        display: flex;
+    }
+
+    .div3st {
+        font-size: 20px;
+        width: 450px;
+        margin-left: 4px;
+        margin-top: 25px;
+        border: 1px solid #c1c1c3;
+        padding: 5px;
+        text-align: center;
+        /* font-weight: 50; */
+        background-color: #F5F6FA;
+        border-style: dashed;
+    }
+
+    .span1 {
+        color: rgb(83, 83, 201);
+    }
+
+    .span2 {
+        font-size: 20px;
+        color: rgb(107, 103, 103);
+    }
+
+    .div3st2 {
+        margin-top: 55px;
+        font-size: 15px;
+        /* position: relative; */
+        left: 50px;
+        width: 300px;
+        color: rgb(107, 103, 103);
+        height: 60px;
+        text-align: center;
+        /* margin-left: 25px; */
+    }
+
+    .boxdiv3 {
+        height: 35px;
+        width: 300px;
+        position: relative;
+        top: 150px;
+        left: -20px;
+        background-color: #6875E2;
+        border-radius: 40px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        padding-top: 10px;
+        /* padding: 5px 15px 5px 90px; */
+    }
+
+    .hero4 {
+        height: 850px;
+        width: 70vw;
+        /* padding: 40px 15px 40px 15px; */
+        /* background-color: rgb(178, 175, 175); */
+        position: relative;
+        left: 10px;
+    }
+
+    .hero4div1 {
+        font-size: 22px;
+        font-weight: 450;
+    }
+
+    form {
+        margin-top: 20px;
+        font-size: 25px;
+        color: rgb(72, 70, 70);
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .star {
+        color: red;
+    }
+
+    input {
+        margin-top: 15px;
+        display: block;
+        height: 30px;
+        width: 100%;
+        padding-left: 12px;
+    }
+
+    select {
+        margin-top: 15px;
+        display: block;
+        height: 30px;
+        width: 100%;
+        padding-left: 12px;
+    }
+
+    .files {
+        cursor: pointer;
+        height: 28px;
+        font-size: 18px;
+        width: 200px;
+    }
+
+    .cancel {
+        height: 35px;
+        border-radius: 5px;
+        box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+        font-size: 14px;
+        font-weight: 500;
+        width: 100px;
+        margin: 55px 0 0 5px;
+        border: none;
+        transition: 0.8s ease;
+        color: white;
+        background-color: rgb(134, 145, 232);
+    }
+
+    .cancel:hover {
+        background-color: rgb(111, 126, 235);
+    }
+
+    .Submit {
+        height: 35px;
+        width: 170px;
+        background-color: rgb(134, 145, 232);
+        margin: 0;
+        position: relative;
+        left: 130px;
+        top: -36px;
+        border: none;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 3px 3px;
+        transition: 0.5s ease;
+        border-radius: 5px;
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .Submit:hover {
+        background-color: rgb(96, 110, 218);
+    }
+
+    footer {
+        height: 100px;
+        width: 100vw;
+        background-color: #d9c2c2;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+
+
+
+
+}

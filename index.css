@@ -300,6 +300,10 @@ footer {
 .text h5 {
     margin-top: 15px;
 }
+.text a{
+    width: 210px;
+    height: 30px;    
+}
 
 #btn {
     position: relative;

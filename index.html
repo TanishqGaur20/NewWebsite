@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>{{title}}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -32,6 +32,7 @@
             <i class="fa-solid fa-link"></i>
         </div>
     </div>
+
     <div class="hero2">
         <div class="divO divbl"> Job Listing</div>
         <div class="divOI"><i class="fa-solid fa-greater-than"></i></div>
@@ -61,42 +62,58 @@
     </div>
     <div class="hero4">
         <div class="hero4div1">Basic Info</div>
-        <form action="">
-            <label for="name">First Name <span class="star">*</span></label>
-            <input type="text" placeholder="Enter First Name">
-            <label for="name">Last Name <span class="star">*</span></label>
-            <input type="text" placeholder="Enter Last Name">
-            <label for="name">Email <span class="star">*</span></label>
-            <input type="text" placeholder="Enter Email">
-            <label for="name">Mobile no. <span class="star">*</span></label>
-            <input type="number" placeholder="Enter Mobile NO.">
-            <label for="name">Date of Birth <span class="star">*</span></label>
-            <input type="date" placeholder="Enter birth Date">
-            <label for="">What describes you best / Highest qualification <span class="star">*</span></label>
-            <select name="" id="">
-                <option value="">CA Fresher (Nov22 Qualified)</option>
-                <option value="">CA Qualified (0-2yrs Exp.)</option>
-                <option value="">Articleship / Industrial Training</option>
-                <option value="">Semi-Qualified CA (Final Dropped Out)</option>
-                <option value="">Company Secretary</option>
+        <form action="/" method="post">
+            <label for="firstname">First Name <span id="star1" style="color:red">*</span></label>
+            <input type="text" placeholder="Enter First Name" name="firstname" id="firstname">
+            <label for="lastname">Last Name <span id="star2" style="color:red">*</span></label>
+            <input type="text" placeholder="Enter Last Name" name="lastname" id="lastname">
+            <label for="email">Email <span id="star3" style="color:red">*</span></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email">
+            <label for="mobile">Mobile no. <span id="star4" style="color:red">*</span></label>
+            <input type="number" placeholder="Enter Mobile NO." name="mobile" id="mobile">
+            <label for="date">Date of Birth <span id="star5" style="color:red">*</span></label>
+            <input type="date" placeholder="Enter birth Date" name="date" id="date">
+            <label for="qualification">What describes you best / Highest qualification <span id="star6"
+                    style="color:red">*</span></label>
+            <select id="qualification" name="qualification">
+                <option value="">Select One Option</option>
+                <option value="CA Fresher (Nov22 Qualified)">CA Fresher (Nov22 Qualified)</option>
+                <option value="CA Qualified (0-2yrs Exp.)">CA Qualified (0-2yrs Exp.)</option>
+                <option value="Articleship / Industrial Training">Articleship / Industrial Training</option>
+                <option value="Semi-Qualified CA (Final Dropped Out)">Semi-Qualified CA (Final Dropped Out)</option>
+                <option value="Company Secretary">Company Secretary</option>
             </select>
-            <label for="">How many years of full-time experience do you have (Post Qualification only)? <span
-                    class="star">*</span></label>
-            <select name="" id="" placeholder="Enter Experience">
-                <option value="">None (Fresher)</option>
-                <option value="">Less than 1 year</option>
-                <option value="">1 Year</option>
-                <option value="">2 Year</option>
-                <option value="">3 Year</option>
-                <option value="">5 Year</option>
-                <option value="">6 Year</option>
-                <option value="">7 Year</option>
-                <option value="">10 Year</option>
-                <option value="">More than 10 Year</option>
+            <label for="experience">How many years of full-time experience do you have (Post Qualification only)? <span
+                    id="star7" style="color:red">*</span></label>
+            <select id="experience" name="experience">
+                <option value="">Select Option</option>
+                <option value="None (Fresher)">None (Fresher)</option>
+                <option value="Less than 1 year">Less than 1 year</option>
+                <option value="1 Year">1 Year</option>
+                <option value="2 Year">2 Year</option>
+                <option value="3 Year">3 Year</option>
+                <option value="5 Year">5 Year</option>
+                <option value="6 Year">6 Year</option>
+                <option value="7 Year">7 Year</option>
+                <option value="10 Year">10 Year</option>
+                <option value="More than 10 Year">More than 10 Year</option>
             </select>
+            <input type="text" name="active" id="Active">
             <label for="">Upload Resume</label>
             <input type="file" class="files" placeholder="Browse">
-            <button type="submit" class="Submit">Submit Application</button>
+            <p id="warning"></p>
+            <div id="successalert">
+                <div class="circle">
+                    <i id="right" class="fa-solid fa-check"></i>
+                </div>
+                <div class="text">
+                    <h4> Awesome !</h4>
+                    <h4 id="Username"></h4>
+                    <h5>Your Registeration has been Successfull</h5>
+                    <button id="btn" type="submit" onclick="ActiveTrue()">OK</button>
+                </div>
+            </div>
+            <button onclick="check()" class="Submit">Submit Application</button>
             <button class="cancel">Cancel</button>
         </form>
     </div>
@@ -104,6 +121,118 @@
         <p> Made with &hearts; by Tanishq </p>
         <p>All &copy; Copyrights Reserved</p>
     </footer>
+
+    <script>
+        const firstname = document.getElementById('firstname');
+        const lastname = document.getElementById('lastname');
+        const email = document.getElementById('email');
+        const mobile = document.getElementById('mobile');
+        const qualification = document.getElementById('qualification');
+        const experience = document.getElementById('experience');
+        const date = document.getElementById('date');
+        const warning = document.getElementById('warning');
+        const starspan1 = document.getElementById('star1');
+        const starspan2 = document.getElementById('star2');
+        const starspan3 = document.getElementById('star3');
+        const starspan4 = document.getElementById('star4');
+        const starspan5 = document.getElementById('star5');
+        const starspan6 = document.getElementById('star6');
+        const starspan7 = document.getElementById('star7');
+        const successalert = document.getElementById('successalert');
+        const Active = document.getElementById('Active');
+        const Username = document.getElementById('Username');
+
+
+        const button = document.getElementsByClassName('submit');
+
+
+        function ActiveTrue() {
+            Active.value = 'true';
+            console.log(Active.value);
+        }
+
+
+
+
+        var i = 0;
+        function BlueColor() {
+
+            if (firstname.value && i === 0) {
+                i = i + 1;
+                starspan1.style.color = 'blue';
+            }
+            else if (lastname.value && i === 1) {
+                i = i + 1;
+                starspan2.style.color = 'blue';
+            }
+            else if (email.value && i === 2) {
+                i = i + 1;
+                starspan3.style.color = 'blue';
+            }
+            else if (mobile.value && i === 3) {
+                starspan4.style.color = 'blue';
+            }
+            else if (date.value && i === 4) {
+                i = i + 1;
+                console.log(date.value);
+                starspan5.style.color = 'blue';
+            }
+            else if (qualification.value && i === 5) {
+                i = i + 1;
+                console.log(qualification.value);
+                starspan6.style.color = 'blue';
+            }
+            else if (experience && i === 6) {
+                i = i + 1;
+                console.log(experience.value);
+                starspan7.style.color = 'blue';
+            }
+
+        }
+
+
+
+
+        var intervalid = setInterval(BlueColor, 1000);
+
+        function check() {
+            if (!firstname.value) {
+                warning.innerHTML = 'Enter First Name';
+            }
+
+            else if (!lastname.value) {
+                warning.innerHTML = 'Enter Last Name';
+            }
+
+            else if (!email.value) {
+                warning.innerHTML = 'Enter Email';
+            }
+
+            else if (!mobile.value) {
+                warning.innerHTML = 'Enter Mobile no.';
+            }
+
+            else if (!date.value) {
+                warning.innerHTML = 'Enter Birth Date';
+            }
+
+            else if (!qualification.value) {
+                warning.innerHTML = 'Enter Qualification';
+            }
+            else if (!experience.value) {
+                warning.innerHTML = 'Enter Experience';
+            }
+
+            else {
+                warning.innerHTML = 'Registration Successfull';
+                Username.innerHTML = firstname.value;
+                Username.style.textTransform = 'capitalize';
+                successalert.style.display = 'block';
+            }
+
+        }
+    </script>
+
 </body>
 
 </html>

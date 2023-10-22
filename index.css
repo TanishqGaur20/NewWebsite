@@ -4,6 +4,9 @@
     color: #005B41;
 }
 
+a{
+text-decoration: none;
+}
 .hero {
     width: 100vw;
     height: 350px;

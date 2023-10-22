@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    color: #005B41;
 }
 
 .hero {
@@ -13,7 +14,7 @@
 .div1 {
     font-size: 20px;
     font-weight: 400;
-    padding-top: 100px;
+    padding-top: 85px;
     text-align: center;
     margin-bottom: 8px;
 
@@ -33,12 +34,13 @@
 }
 
 .div4 {
-    margin-top: 15px;
+    margin-top: 30px;
     text-align: center;
     font-size: 25px;
 }
 
 .div4 i {
+    color: black;
     margin-left: 6px;
     opacity: .75;
     padding: 4px;
@@ -47,8 +49,8 @@
 }
 
 .div4 i:hover {
-    color: rgb(42, 42, 205);
-    border: 2px solid blue;
+    color: #005B41;
+    border: 2px solid #005B41;
 }
 
 .hero2 {
@@ -70,6 +72,7 @@
     margin-right: 4px;
     margin-left: 4px;
     margin-top: 8px;
+    color: black;
 }
 
 .divbl:hover {
@@ -108,7 +111,7 @@
     width: 350px;
     margin-left: 4px;
     margin-top: 25px;
-    border: 1px solid #c1c1c3;
+    border: 1px solid #005B41;
     padding: 20px 10px 20px 10px;
     text-align: center;
     /* font-weight: 50; */
@@ -143,7 +146,7 @@
     position: relative;
     top: 100px;
     left: -120px;
-    background-color: #6875E2;
+    background-color: #F875AA;
     border-radius: 40px;
     color: white;
     font-size: 18px;
@@ -153,12 +156,16 @@
 }
 
 .hero4 {
-    height: 850px;
+    height: 750px;
     width: 70vw;
     padding: 40px 15px 40px 15px;
     /* background-color: rgb(178, 175, 175); */
     position: relative;
     left: 150px;
+    margin-bottom: 15px;
+    background-color: #f5d5d8;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 .hero4div1 {
@@ -214,41 +221,119 @@ select {
     width: 150px;
     margin: 55px 0 0 120px;
     border: none;
-    transition: 0.8s ease;
+    transition: 1s ease;
     color: white;
-    background-color: rgb(134, 145, 232);
+    background-color: #F875AA;
 }
 
 .cancel:hover {
-    background-color: rgb(111, 126, 235);
+    color: black;
+    background-color: #F5D5D8;
 }
 
 .Submit {
     height: 40px;
     width: 180px;
-    background-color: rgb(134, 145, 232);
+    background-color: #F875AA;
     margin: 55px 0 0 50px;
     border: none;
     color: white;
     font-size: 18px;
     font-weight: 500;
     padding: 3px 3px;
-    transition: 0.5s ease;
+    transition: 1s ease;
     border-radius: 5px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .Submit:hover {
-    background-color: rgb(96, 110, 218);
+    color: black;
+    background-color: #F5D5D8;
 }
 
 footer {
-    height: 100px;
+    height: 60px;
     width: 100vw;
-    background-color: #d9c2c2;
+    background-color: #e379a3;
     text-align: center;
     padding-top: 20px;
 }
+
+#warning {
+    font-size: 15px;
+    color: red;
+    text-align: center;
+}
+
+#Active {
+    display: none;
+}
+
+#successalert {
+    position: absolute;
+    padding: 15px 8px 0px 8px;
+    height: 200px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+}
+
+.text {
+    height: 85%;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.text h4 {
+    display: inline;
+}
+
+.text h5 {
+    margin-top: 15px;
+}
+
+#btn {
+    position: relative;
+    border: none;
+    top: 25px;
+    width: 210px;
+    height: 30px;
+    font-size: 15px;
+    color: white;
+    background-color: #37E030;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+
+#btn:hover {
+    background-color: #10ff08;
+}
+
+.circle {
+    background-color: #37E030;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 110px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right {
+    font-size: 50px;
+}
+
+
 
 
 @media (max-width:600px) {
@@ -398,19 +483,19 @@ footer {
         width: 300px;
         position: relative;
         top: 150px;
-        left: -20px;
+        left: -30px;
         background-color: #6875E2;
         border-radius: 40px;
         color: white;
         font-size: 14px;
         text-align: center;
+        padding: 0;
         padding-top: 10px;
-        /* padding: 5px 15px 5px 90px; */
     }
 
     .hero4 {
         height: 850px;
-        width: 70vw;
+        width: 85vw;
         /* padding: 40px 15px 40px 15px; */
         /* background-color: rgb(178, 175, 175); */
         position: relative;
@@ -434,9 +519,6 @@ footer {
         font-size: 15px;
     }
 
-    .star {
-        color: red;
-    }
 
     input {
         margin-top: 15px;
@@ -479,7 +561,7 @@ footer {
         background-color: rgb(111, 126, 235);
     }
 
-     .Submit {
+    .Submit {
         height: 35px;
         width: 170px;
         background-color: rgb(134, 145, 232);
@@ -494,6 +576,7 @@ footer {
         border-radius: 5px;
         box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
     }
+
     .Submit:hover {
         background-color: rgb(96, 110, 218);
     }
